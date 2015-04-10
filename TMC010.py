@@ -174,7 +174,7 @@ class MessageControl:
 
         print("\r\n")
 
-    # Setters
+    # Setters (They aren't really neccessary)
     def set_data_type(self, data_type):
         self.data_type = data_type
 
