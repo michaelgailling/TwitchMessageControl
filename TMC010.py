@@ -144,7 +144,9 @@ class MessageControl:
         elif self.data_type == "privmsg":
             if self.content_list[0] in self.action_dict:
                 self.action_dict[self.content_list[0]]()
-
+    #The following function may trigger flood control please mod your bots
+    #and limit this command to mods only
+    #Note to self: Create an permissions function
     def say_names(self):
         x = ""
         for i in self.name_list:
